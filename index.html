@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceBuddy - Personal Finance Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>FinanceBuddy</h1>
+            <p>Track Your Income & Expenses in Style</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="finance-dashboard">
+            <div class="finance-summary">
+                <h2>Overview</h2>
+                <div class="summary-card">
+                    <h3>Total Income</h3>
+                    <p id="total-income">$0.00</p>
+                </div>
+                <div class="summary-card mt">
+                    <h3>Total Expenses</h3>
+                    <p id="total-expenses">$0.00</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Balance</h3>
+                    <p id="balance">$0.00</p>
+                </div>
+            </div>
+            <div class="finance-details">
+                <div class="finance-card">
+                    <h3>Expenses</h3>
+                    <ul id="expense-list"></ul>
+                </div>
+                <div class="finance-card">
+                    <h3>Incomes</h3>
+                    <ul id="income-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="budget-tracker">
+            <h2>Budget Tracker</h2>
+            <canvas id="budget-chart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FinanceBuddy - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
